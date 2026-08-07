@@ -9,11 +9,18 @@ const projects = [
 		url: 'https://github.com/InSynchronous/UltraHawk',
 	},
 	{
-		title: 'Custom Drone Ground Station',
+		title: 'Custom Drone Ground Station Software',
 		subtitle: 'Autonomous Flight & Stabilization',
 		description: 'Autonomous drone control software with flight planning, stabilization, and real-time telemetry.',
 		tech: ['C++', 'Python', 'Cross-platform', 'Qt'],
 		url: 'https://github.com/InSynchronous/UltraHawk-Basestation',
+	},
+	{
+		title: 'Custom 6DOF Thrust Vector Control Simulation for Rockets',
+		subtitle: 'Aerospace and Guidence Navigation Control Engineering',
+		description: 'Software raytracer with global illuminasion and support for .OBJ imports.',
+		tech: ['Python', 'Physics', 'matplotlib', 'Model Rocketry', 'Thrust Vector Control'],
+		url: 'https://github.com/InSynchronous/VectorX',
 	},
 	{
 		title: 'Raytracer',
