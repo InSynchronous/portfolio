@@ -1,1 +1,52 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  transition: background 0.3s;
+}
 
+.navbar.scrolled {
+  background: var(--navbar-bg-scrolled);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-links {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-links a {
+	color: var(--text);
+	text-decoration: none;
+	font-size: 0.875rem; /* rem is the superior unit for like everything */
+	transition: color 0.2s;
+	position: relative;
+}
+
+.nav-links a:hover
+.nav-links a.active {
+	color: var(--text-heading);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.2s;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
