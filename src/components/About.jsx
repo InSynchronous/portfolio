@@ -11,18 +11,22 @@ export default function About() {
 				<div className="about-grid">
 					<Reveal className="about-text" delay={0.1}>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut quam
-							rhoncus diam ullamcorper varius. Pellentesque lacus risus, hendrerit eget
+							My name is Ahsan Ahmed. I am a 14 y/o high-school student located in the SF Bay Area focused on 
+							creating embeded systems and autonomous robotics projects with emphasis on aerospace, GNC code, and
+							real world hardware/software integration.
 						</p>
 
 						<p>
-							Sed maximus lorem vel augue dictum, sed tempor dolor vestibulum. Proin vel
-							justo in tellus sollicitudin placerat sagittis a orci. Quisque ullamcorper,
+							My main interests are in embedded systems engineering, robotics, and
+							aerospace/GNC systems. I work with concepts ranging from circuit
+							design and PCB layout to firmware development and control algorithms.
 						</p>
 
 						<p>
-							Vivamus eu sem consectetur, tincidunt ligula a, lacinia sem. In vitae
-							pellentesque sem, ullamcorper vulputate dolor. Proin quis vestibulum eros.
+							I'm especially interested in how real-time software interacts with
+							physical systems; how control theory, sensors, and embedded
+							firmware come together to create stable and intelligent machines.
+
 						</p>
 					</Reveal>
 
