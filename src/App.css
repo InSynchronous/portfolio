@@ -379,3 +379,136 @@
 	border-radius: 999px;
 	font-weight: 500;
 }
+
+.modal-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 200;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(6px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+	animation: modal-fade 0.2s ease;
+}
+
+.modal {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 2rem;
+	text-align: center;
+	animation: modal-pop 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.modal-close {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: none;
+	border-radius: 8px;
+	color: var(--text);
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+.modal-close:hover {
+	background: var(--accent-dim);
+	color: var(--text-heading);
+}
+
+.modal-title {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--text-heading);
+	letter-spacing: -0.5px;
+	margin-bottom: 0.5rem;
+}
+
+.modal-subtitle {
+	font-size: 0.875rem;
+	color: var(--text);
+	margin-bottom: 1.75rem;
+}
+
+.modal-socials {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.modal-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.625rem;
+	padding: 0.85rem 1rem;
+	border-radius: 10px;
+	background: var(--accent-dim);
+	color: var(--accent);
+	font-weight: 600;
+	font-size: 0.9375rem;
+	text-decoration: none;
+	border: 1px solid rgba(167, 139, 250, 0.3);
+	transition: all 0.2s;
+}
+
+.modal-social:hover {
+	background: var(--accent);
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+@keyframes modal-fade {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes modal-pop {
+	from { opacity: 0; transform: scale(0.92) translateY(10px); }
+	to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #9f7aea;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.btn-secondary:hover {
+  background: rgba(167, 139, 250, 0.2);
+  transform: translateY(-1px);
+}
