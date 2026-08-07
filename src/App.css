@@ -89,3 +89,13 @@
 	justify-content: center;
 	pointer-events: auto;
 }
+
+.scene-container {
+	position: absolute;
+	inset: 0;
+	z-index: 0; /* 3d object fun show is behind the text */
+}
+
+.scene-container canvas {
+	display: block;
+}
