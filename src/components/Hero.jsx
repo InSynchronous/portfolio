@@ -1,0 +1,28 @@
+import { lazy, Suspense } from 'react'
+import Reveal from './Reveal'
+
+const Scene = lazy(() => import('./Scene'))
+
+export default function Hero() {
+	return (
+		<section id="hero" className="hero-section">
+			<Suspense>
+				<Scene />
+			</Suspense>
+			<div className="hero-overlay">
+				<Reveal>
+					<h1 className="hero-name">Ahsan Ahmed</h1>
+				</Reveal>
+				<Reveal delay={0.2}>
+					<p className="hero-tagline">14 y/o &middot; Embeded Systems &amp; Aerospace Engineering</p>
+				</Reveal>
+				<Reveal delay={0.4}>
+					<div className="hero-cta">
+						<a href="#projects" className="btn-primary">View Projects</a>
+						<a href="#contact" className="btn-secondary">Get In Touch</a>
+					</div>
+				</Reveal>
+			</div>
+		</section>
+	)
+}
