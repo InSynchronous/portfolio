@@ -1,4 +1,4 @@
 # Portfolio
-I guess everyone has a website except me, so I decided to subject myself through the torture of learning web technologies and manually making a Three.js based portfolio like the rest of the crowd!
+Personal portfolio site I made in a weekend for myself. Uses Three.js for 3D graphics cuz thats the meta
 
-## UNDER CONSTRUCTION
+![Preview](images/preview.png)
